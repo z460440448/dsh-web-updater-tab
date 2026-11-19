@@ -1,0 +1,5 @@
+# dsh-web-updater bundle patch: mounts the update badge in the Web client and
+# its three loopback HTTP routes on the host web server.
+- insert:
+    - id: dsh-web-updater
+      name: dsh-web-updater

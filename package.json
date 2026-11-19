@@ -1,0 +1,41 @@
+{
+  "name": "dsh-web-updater",
+  "version": "0.1.0",
+  "description": "Update badge for DSH Web: a floating edge tab that checks @deepseek-ai/dsh releases, installs them with one click, and schedules automatic updates.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/ui.js",
+    "bin/dsh-web-update.mjs",
+    "cordis.patch.yml",
+    "screenshots.json",
+    "assets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z460440448/dsh-web-updater.git"
+  },
+  "homepage": "https://github.com/z460440448/dsh-web-updater#readme",
+  "bugs": {
+    "url": "https://github.com/z460440448/dsh-web-updater/issues"
+  },
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "updater"],
+  "author": "z460440448",
+  "license": "MIT"
+}
