@@ -1,4 +1,4 @@
-# dsh-web-updater
+# dsh-web-updater-tab
 
 A DSH Web plugin that puts an update badge in the page: a vertical tab docked to the left or right edge of the window. Hover it to expand, click it for details, and install a new `@deepseek-ai/dsh` release without opening a terminal.
 
@@ -17,7 +17,7 @@ DSH Web has no self-update. The version it runs is the `@deepseek-ai/dsh` pinned
 ## Install
 
 ```sh
-dsh plugin --profile web add github:z460440448/dsh-web-updater
+dsh plugin --profile web add github:z460440448/dsh-web-updater-tab
 dsh web          # restart the profile so the plugin mounts
 ```
 
@@ -55,7 +55,7 @@ Requirements: DSH Web 0.2.x (tested on `0.2.2-rc.5`). The plugin runs inside the
 The scheduled half lives in a small CLI that ships with the plugin (`bin/dsh-web-update.mjs`). Register it as a user-level timer once:
 
 ```sh
-node ~/.dsh/profiles/web/node_modules/dsh-web-updater/bin/dsh-web-update.mjs install
+node ~/.dsh/profiles/web/node_modules/dsh-web-updater-tab/bin/dsh-web-update.mjs install
 ```
 
 That installs a launchd agent (`com.dsh.web-update`) which checks every 6 hours, and inside the configured window — and only when no session has written in the last 15 minutes — applies the update. Without this step the plugin still checks and updates on click; it just won't run while you are away.

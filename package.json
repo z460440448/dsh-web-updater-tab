@@ -1,5 +1,5 @@
 {
-  "name": "dsh-web-updater",
+  "name": "dsh-web-updater-tab",
   "version": "0.1.0",
   "description": "Update badge for DSH Web: a floating edge tab that checks @deepseek-ai/dsh releases, installs them with one click, and schedules automatic updates.",
   "type": "module",
@@ -30,11 +30,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/z460440448/dsh-web-updater.git"
+    "url": "git+https://github.com/z460440448/dsh-web-updater-tab.git"
   },
-  "homepage": "https://github.com/z460440448/dsh-web-updater#readme",
+  "homepage": "https://github.com/z460440448/dsh-web-updater-tab#readme",
   "bugs": {
-    "url": "https://github.com/z460440448/dsh-web-updater/issues"
+    "url": "https://github.com/z460440448/dsh-web-updater-tab/issues"
   },
   "keywords": [
     "dsh",
