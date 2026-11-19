@@ -18,6 +18,7 @@
       "platform": "web"
     }
   },
+  "icon": "assets/icon-180.png",
   "files": [
     "lib/index.js",
     "lib/client.js",
@@ -35,7 +36,12 @@
   "bugs": {
     "url": "https://github.com/z460440448/dsh-web-updater/issues"
   },
-  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "updater"],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "updater"
+  ],
   "author": "z460440448",
   "license": "MIT"
 }
