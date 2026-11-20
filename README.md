@@ -17,9 +17,15 @@ DSH Web has no self-update. The version it runs is the `@deepseek-ai/dsh` pinned
 ## Install
 
 ```sh
+# from GitHub
 dsh plugin --profile web add github:z460440448/dsh-web-updater-tab
+# or from npm (prebuilt, no build-approval step)
+dsh plugin --profile web add dsh-web-updater-tab
+
 dsh web          # restart the profile so the plugin mounts
 ```
+
+Also on npm: [`dsh-web-updater-tab`](https://www.npmjs.com/package/dsh-web-updater-tab).
 
 The plugin appears as a tab on the right edge of the page. It also registers a section in **Settings → DSH 更新**.
 
